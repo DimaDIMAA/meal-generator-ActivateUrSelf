@@ -18,5 +18,6 @@ function calculateBMI() {
     if (gen === "2") {
         BMR = 447.593 + 9 * parseInt(weight) + 3.098 * parseInt(height) - 4.330 * parseInt(age);
     }
+    document.getElementById("afisare-rezultat").innerHTML = BMR
     console.log(BMR)
 }
