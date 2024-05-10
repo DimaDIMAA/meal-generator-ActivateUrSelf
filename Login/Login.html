@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet">
+    <title>Login & Signup</title>
+</head>
+<body>
+
+<!-- Login Page -->
+<div class="container" id="loginForm">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+        <label for="loginUsername">Username <span style="color: red;">*</span></label>
+        <input type="text" id="loginUsername" name="username" placeholder="Enter your username" required>
+        <label for="loginPassword">Password <span style="color: red;">*</span></label>
+        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+        <input type="submit" value="Login">
+    </form>
+    <div class="form-footer">
+        <p>Don't have an account? <a href="#" onclick="toggleForm('signupForm')">Signup</a></p>
+    </div>
+</div>
+
+<!-- Signup Page (Initially Hidden) -->
+<div class="container" id="signupForm" style="display:none;">
+    <h2>Signup</h2>
+    <form action="/signup" method="post">
+        <label for="signupUsername">Username <span style="color: red;">*</span></label>
+        <input type="text" id="signupUsername" name="username" placeholder="Choose a username" required>
+        <label for="signupPassword">Password <span style="color: red;">*</span></label>
+        <input type="password" id="signupPassword" name="password" placeholder="Choose a password" required>
+        <input type="submit" value="Signup">
+    </form>
+    <div class="form-footer">
+        <p>Already have an account? <a href="#" onclick="toggleForm('loginForm')">Login</a></p>
+    </div>
+</div>
+
+<script>
+    function toggleForm(formId) {
+        var loginForm = document.getElementById('loginForm');
+        var signupForm = document.getElementById('signupForm');
+
+        if (formId === 'loginForm') {
+            loginForm.style.display = 'block';
+            signupForm.style.display = 'none';
+        } else {
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
