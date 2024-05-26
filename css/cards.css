@@ -18,6 +18,7 @@
 @media (max-width: 768px) {
   .meal-card {
     height: auto;
+    weight: auto;
     /* Let height adjust to content */
     padding: 20px;
     /* Reduce padding for smaller screens */
