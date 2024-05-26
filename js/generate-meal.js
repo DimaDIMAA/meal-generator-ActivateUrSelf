@@ -49,6 +49,7 @@ function parseNutritionalValue(value) {
 
 function generateDayMealPlan(mealsData, targetCalories) {
     const mealCardsContainer = document.getElementById('meal-cards-container');
+    console.log("Hello world!");
     mealCardsContainer.innerHTML = '';
 
     let breakfasts = mealsData.filter(meal => meal.meal_time === 'breakfast');
