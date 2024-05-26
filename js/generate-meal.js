@@ -1,5 +1,3 @@
- console.log("Hello world2!");
-
 function generateMeal(event) {
     const caloriesInput = document.querySelector('input[name="username"]');
     if (caloriesInput.value === "") {
@@ -51,7 +49,6 @@ function parseNutritionalValue(value) {
 
 function generateDayMealPlan(mealsData, targetCalories) {
     const mealCardsContainer = document.getElementById('meal-cards-container');
-    console.log("Hello world!");
     mealCardsContainer.innerHTML = '';
 
     let breakfasts = mealsData.filter(meal => meal.meal_time === 'breakfast');
@@ -137,12 +134,11 @@ function generateDayMealPlan(mealsData, targetCalories) {
     });
 
     console.log(`Total Calories: ${totalCalories}`);
-    console.log(`Total Calories:`);
  
 }
 
 function appendMealCard(container, meal) {
- console.log('append meal card');
+
     const card = document.createElement('div');
     card.classList.add('meal-card');
 
