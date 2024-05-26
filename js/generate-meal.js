@@ -1,4 +1,5 @@
 function generateMeal(event) {
+     console.log("f1");
     const caloriesInput = document.querySelector('input[name="username"]');
     if (caloriesInput.value === "") {
         return false;
@@ -10,7 +11,7 @@ function generateMeal(event) {
             generateDayMealPlan(data, parseInt(caloriesInput.value));
         })
         .catch(error => console.error('Error loading meals data:', error));
-    console.log("f1");
+   
 }
 
 function getRandomMeal(meals) {
