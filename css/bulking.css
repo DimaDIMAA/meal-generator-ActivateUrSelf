@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header img {
+    width: 100%;
+    height: auto;
+}
+h1, h2, h3 {
+    color: #333;
+}
+p {
+    color: #555;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #f4f4f4;
+}
+td {
+    vertical-align: top;
+}
+
+.table-image {
+    width: 100%; /* Adjust the size as needed */
+    height: auto;
+    /* opacity: 0.5; */
+    display: block;
+    margin: 0 auto 20px auto; /* Center the image */
+}

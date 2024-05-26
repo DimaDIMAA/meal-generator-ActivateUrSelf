@@ -1,0 +1,94 @@
+.meal-card {
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  z-index: 100;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .meal-card {
+    height: auto;
+    /* Let height adjust to content */
+    padding: 20px;
+    /* Reduce padding for smaller screens */
+    border-radius: 10px;
+    /* Adjust border radius for smaller screens */
+  }
+  .container-img {
+    gap: 0.6rem; /* Reduce gap for smaller screens */
+    flex-direction: column; /* Stack items vertically for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .meal-card {
+    padding: 15px;
+    /* Further reduce padding for very small screens */
+    border-radius: 5px;
+    /* Further adjust border radius for very small screens */
+  }
+  .container-img {
+    gap: 0.4rem; /* Further reduce gap for very small screens */
+    flex-direction: column; /* Ensure items are stacked vertically */
+  }
+}
+
+
+.meal-card:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#meal-cards-container {
+  /* max-height: 50vh;
+    overflow-y: scroll; */
+  display: grid;
+  gap: .55rem;
+  width: 95vw;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  /* grid-template-rows: repeat(auto-fill, 300px); */
+  font-weight: 800;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  /* Set the opacity of the background image */
+  z-index: -1;
+  /* Put the image behind other content */
+}
+
+.meal-image {
+  width: 30%;
+  height: auto;
+}
+
+.container-img {
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+}
+
+h3 {
+  font-weight: 900;
+}
+
+.header-chart {
+  display: flex;
+}
