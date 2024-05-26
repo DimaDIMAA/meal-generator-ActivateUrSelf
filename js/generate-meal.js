@@ -134,11 +134,9 @@ function generateDayMealPlan(mealsData, targetCalories) {
     });
 
     console.log(`Total Calories: ${totalCalories}`);
- 
 }
 
 function appendMealCard(container, meal) {
-
     const card = document.createElement('div');
     card.classList.add('meal-card');
 
