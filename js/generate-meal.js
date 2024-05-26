@@ -10,6 +10,7 @@ function generateMeal(event) {
             generateDayMealPlan(data, parseInt(caloriesInput.value));
         })
         .catch(error => console.error('Error loading meals data:', error));
+    console.log("f1");
 }
 
 function getRandomMeal(meals) {
