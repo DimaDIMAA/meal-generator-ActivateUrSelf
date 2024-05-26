@@ -75,14 +75,19 @@
 }
 
 .meal-image {
-  width: 30%;
-  height: auto;
+  width: 250px;
+  height: 200px;
 }
 
 .container-img {
   display: flex;
   gap: .8rem;
   align-items: center;
+}
+
+.container-img > * {
+  max-width: 200px; /* or any fixed value you prefer */
+  flex: 1;
 }
 
 h3 {
