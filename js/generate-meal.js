@@ -1,3 +1,5 @@
+ console.log("Hello world2!");
+
 function generateMeal(event) {
     const caloriesInput = document.querySelector('input[name="username"]');
     if (caloriesInput.value === "") {
