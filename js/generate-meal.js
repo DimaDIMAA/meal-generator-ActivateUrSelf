@@ -140,6 +140,7 @@ function generateDayMealPlan(mealsData, targetCalories) {
 }
 
 function appendMealCard(container, meal) {
+ console.log('append meal card');
     const card = document.createElement('div');
     card.classList.add('meal-card');
 
