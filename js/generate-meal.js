@@ -137,7 +137,7 @@ function generateDayMealPlan(mealsData, targetCalories) {
     });
 
     console.log(`Total Calories: ${totalCalories}`);
-    console.log('Total Calories:');
+    console.log(`Total Calories:`);
  
 }
 
